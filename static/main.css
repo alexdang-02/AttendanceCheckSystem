@@ -25,3 +25,13 @@
     background-color: #4CAF50;
     color: white;
 }
+
+.alert-danger {
+  padding: 12px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  border: 2px solid rgb(139, 0, 0);
+  background-color: rgb(55, 0, 255);
+  color: white;
+}

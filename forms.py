@@ -19,6 +19,8 @@ class RegisterForm(Form):
     
     dob = StringField("Date of Birth", validators=[validators.DataRequired(message="Please Fill This Field")])
 
+    phone = IntegerField("Phone Number", validators=[validators.DataRequired(message="Please enter a valid phone number")])
+
     password = PasswordField("Password", validators=[
     
         validators.DataRequired(message="Please Fill This Field"),
