@@ -13,7 +13,7 @@ class RegisterForm(Form):
     
     name = StringField("Full Name", validators=[validators.Length(min=3, max=25), validators.DataRequired(message="Please Fill This Field")])
     
-    employeeid = IntegerField("Employee ID", validators=[validators.NumberRange(min=3658384, max = 3658443), validators.DataRequired(message="Please Fill This Field")])
+    employeeid = IntegerField("Employee ID", validators=[validators.DataRequired(message="Please Fill This Field")])
     
     email = StringField("Email", validators=[validators.Email(message="Please enter a valid email address")])
     

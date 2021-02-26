@@ -6,7 +6,7 @@
 <div class="topnav">
   {% if session.logged_in %}
   <a href="/logout/">Logout</a>
-  <a href='/home'>Back</a>
+      <a href='/home'>Back</a>
 {% else %}
   <a href="/login/">Login</a>
   <a href="/register/">Sign up</a>
@@ -14,7 +14,7 @@
 </div>
 <div class="container">
     <div class="jumbotron">
-      <h1>Register New Employee</h1>
+      <h1>Remove Employee</h1>
       <form class="form-signin">
         <label for="inputName" class="sr-only">Name</label>
         <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
@@ -22,9 +22,7 @@
         <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputEmpID" class="sr-only">Employee ID</label>
         <input type="empID" name="inputEmpID" id="inputEmpID" class="form-control" placeholder="Employee ID" required autofocus>
-        <label for="inputPhone" class="sr-only">Phone</label>
-        <input type="phone" name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone" required autofocus>
-      <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Register</button>
+      <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Remove</button>
     </form>
     </div>
   </div>

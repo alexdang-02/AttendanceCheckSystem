@@ -6,22 +6,10 @@
     {% if session.logged_in %}
 		<a href="/logout/">Logout</a>
 
-		<button type="submit" href="/del_acount/<int:session['username']>" form="DELETE">Delete account</button>>
-
-
+		<!--<button type="submit" href="/del_acount/<int:session['username']>" form="DELETE">Delete account</button>>-->
 	{% else %}
 		<a href="/login/">Login</a>
-		<a href="/register/">Sign up</a>
 	{% endif %}
 </div>
-<hr>
-
-{% if session['logged_in'] %}
-    <h5>Welcome, {{session['name'] }}</h5>
-{% endif %}
-
-{% for message in get_flashed_messages(with_categories=True) %}
-<div class="alert-danger">{{ message }}</div>
-{% endfor %}
 
 {% endblock body %}
